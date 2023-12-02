@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{%  block main %}
+
+<h2>List</h2>
+
+{% for funcionario in object_list %}
+
+    <a href="{% url 'update_funcionario' funcionario.id %}">
+        {{ funcionario.empresa }}
+    </a><br>
+    
+{% endfor%}
+
+{% endblock %}
