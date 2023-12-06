@@ -5,9 +5,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '^(spv%-6+8%p6^eg5l1@q5m)nf%bclk7pyvv^z*9eh29-_6r&i'
 
@@ -33,6 +30,9 @@ INSTALLED_APPS = [
     'apps.departamentos',
     'apps.documentos',
     'apps.registro_hora_extra',
+    
+    
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [

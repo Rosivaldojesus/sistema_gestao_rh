@@ -1,23 +1,26 @@
 {% extends 'base.html' %}
 
-
 {% block main %}
 <div class="row">
+
     <div class="col">
       Column
     </div>
+
     <div class="col">
       Olá, {{ usuario.nome }}
       <a href="{% url 'list_funcionarios' %}">Gerenciar funcionários </a>
+      <a href="{% url 'list_departamentos' %}">Gerenciar Departamentos</a>
     </div>
+
     <div class="col">
       <a href="{% url 'logout' %}">Logout</a>
-
       {% if usuario.empresa %}
         <a href="{% url 'edit_empresa' usuario.empresa.id  %}">Editar empresa</a>
       {% else %}
         <a href="{% url 'create_empresa' %}">Criar empresa</a>
       {% endif  %}
     </div>
+
 </div>
 {% endblock %}

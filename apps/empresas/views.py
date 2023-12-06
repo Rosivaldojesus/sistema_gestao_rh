@@ -20,3 +20,4 @@ class EmpresaCreate(CreateView):
 class EmpresaEdit(UpdateView):
     model = Empresa
     fields = ['nome']
+    
